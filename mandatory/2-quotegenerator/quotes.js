@@ -490,3 +490,18 @@ const quotes = [
     author: "Zig Ziglar",
   },
 ];
+
+document.addEventListener("DOMContentLoaded", function quoteGenerator(){
+let displayQuote = quotes[Math.floor(Math.random()*quotes.length)];
+
+document.querySelector("h5").innerHTML = `"${displayQuote.quote}"`;
+
+document.querySelector("p").innerHTML = `by: ${displayQuote.author}`;
+
+
+//When you click a button on the screen it should change the quote on the screen.
+
+let btn = document.getElementById("button");
+button.addEventListener("click", quoteGenerator);
+
+});
