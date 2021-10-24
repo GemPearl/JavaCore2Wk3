@@ -32,10 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSlide <= 0) {
       picture.src = picsArray[picsArray.length - 1];
       currentSlide = picsArray.length - 1;
-    } else {
-      currentSlide--;
-      picture.src = picsArray[currentSlide];
-    }
+    } 
   }
 
   nextBtn.addEventListener("click", forwardSlides);
